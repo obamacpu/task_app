@@ -76,7 +76,6 @@ body {
 .top-main {
   padding: 100px 0 100px;
   text-align: center;
-  position: absolute;
   top: 0;
   width: 100%;
   height: auto;
@@ -95,9 +94,8 @@ body {
 
 
 .top-login {
-  padding: 350px 0 100px;
+  padding: 10px;
   text-align: center;
-  position: absolute;
   top: 0;
   width: 100%;
   height: auto;
@@ -106,12 +104,9 @@ body {
   font-size: 40px;
 }
 
-
-
-.top-registration {
-  padding: 450px 0 100px;
+.top-signup {
+  padding: 10px;
   text-align: center;
-  position: absolute;
   top: 0;
   width: 100%;
   height: auto;
@@ -121,9 +116,8 @@ body {
 }
 
 .top-about {
-  padding: 550px 0 100px;
+  padding: 10px;
   text-align: center;
-  position: absolute;
   top: 0;
   width: 100%;
   height: auto;

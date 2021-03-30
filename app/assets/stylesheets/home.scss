@@ -59,7 +59,18 @@ body {
 }
 
 /* ヘッダー ================================ */
+.header-logo {
+  float: left;
+  padding-left: 20px;
+  color: white;
+  font-size: 22px;
+  line-height: 64px;
+}
 
+.header-menus {
+  float: right;
+  padding-right: 20px;
+}
 
 /* top ================================ */
 .top-main {

@@ -10,6 +10,19 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">
+        共有くん
+      </div>
+      <ul class="header-menus">
+        <li>
+          <%= link_to("共有くんとは", "/about") %>
+        </li>
+        <li>
+          <%= link_to("ユーザー一覧", "/users/index") %>
+        </li>
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>

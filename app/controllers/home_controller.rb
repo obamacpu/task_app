@@ -5,9 +5,6 @@ class HomeController < ApplicationController
   def login
   end
   
-  def registration
-  end
-  
   def about
   end
   

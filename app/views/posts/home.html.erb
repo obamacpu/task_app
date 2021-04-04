@@ -1,0 +1,19 @@
+<div class="leave seat">
+  <div class="container">
+    <div class="button-heading">離席ボタン</div>
+      <div class="button-body">
+        <div class="a little-button">
+          <%= button_to "ちょっと席外します", {controller: "posts", action: "space"}, {method: :get} %>
+        </div>
+        <div class="for a while-button">
+          <%= button_to "しばらくいません", {controller: "posts", action: "space"}, {method: :get} %>
+        </div>
+        <div class="absence-button">
+          <%= button_to "終日不在です", {controller: "posts", action: "space"}, {method: :get} %>
+        </div>
+        <div class="return-button">
+          <%= button_to "戻りました", {controller: "posts", action: "space"}, {method: :get} %>
+        </div>
+      </div>
+  </div>
+</div>

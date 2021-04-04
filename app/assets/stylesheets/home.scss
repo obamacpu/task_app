@@ -61,10 +61,15 @@ body {
 /* ヘッダー ================================ */
 .header-logo {
   float: left;
-  padding-left: 20px;
+  padding-left: 10px;
   color: white;
   font-size: 22px;
   line-height: 64px;
+}
+
+.header-logo li {
+  float: left;
+  padding-left: 20px;
 }
 
 .header-menus {
@@ -214,6 +219,25 @@ body {
   width: 100%;
   border-radius: 0 0 2px 2px;
   font-size: 14px;
-}// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+}
+
+/* 離席ボタン ================================ */
+.button {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+
+.button-heading{
+  font-weight: 300;
+  margin: 60px 0 20px;
+  font-size: 48px;
+  color: #bcc8d4;
+}
+
+.button-body {
+  padding: 30px;
+}
+
+

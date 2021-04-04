@@ -5,4 +5,7 @@ class PostsController < ApplicationController
   def home
   end
   
+  def space
+  end
+  
 end

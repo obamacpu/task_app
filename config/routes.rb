@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   post "/users/create" => "users#create"
   
   get "posts/home" => "posts#home"
+  get "posts/space" => "posts#space"
 end

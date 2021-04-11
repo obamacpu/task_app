@@ -3,16 +3,16 @@
     <div class="button-heading">離席ボタン</div>
       <div class="button-body">
         <div class="a little-button">
-          <%= button_to "ちょっと席外します", {controller: "posts", action: "space"}, {method: :get} %>
+          <%= button_to "ちょっと席外します", {controller: "posts", action: "create"}, {method: :post, params: {content: "ちょっと席外します"}} %>
         </div>
         <div class="for a while-button">
-          <%= button_to "しばらくいません", {controller: "posts", action: "space"}, {method: :get} %>
+          <%= button_to "しばらくいません", {controller: "posts", action: "create"}, {method: :post, params: {content: "しばらくいません"}} %>
         </div>
         <div class="absence-button">
-          <%= button_to "終日不在です", {controller: "posts", action: "space"}, {method: :get} %>
+          <%= button_to "終日不在です", {controller: "posts", action: "create"}, {method: :post, params: {content: "終日不在です"}} %>
         </div>
         <div class="return-button">
-          <%= button_to "戻りました", {controller: "posts", action: "space"}, {method: :get} %>
+          <%= link_to "戻りました", "/posts/#{@post.user.id}", method: :post%>
         </div>
       </div>
   </div>

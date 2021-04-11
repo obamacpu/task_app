@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   
   get "posts/home" => "posts#home"
   get "posts/space" => "posts#space"
+  post "posts/create" => "posts#create"
+  post "posts/:id" => "posts#destroy"
 end

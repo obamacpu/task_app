@@ -12,7 +12,7 @@
           <%= button_to "終日不在です", {controller: "posts", action: "create"}, {method: :post, params: {content: "終日不在です"}} %>
         </div>
         <div class="return-button">
-          <%= link_to "戻りました", "/posts/#{@post.user.id}", method: :post%>
+          <%= link_to "戻りました", "/posts/session[:user_id]", method: :post%>
         </div>
       </div>
   </div>

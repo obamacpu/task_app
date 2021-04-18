@@ -7,7 +7,8 @@ class PostsController < ApplicationController
   end
   
   def space
-    @posts = Post.all.order(created_at: :desc)
+    @posts = Post.all.order(created_at: :asc)
+    @user = User.find_by(id: :@post.user_id)
   end
   
   def create
@@ -19,9 +20,9 @@ class PostsController < ApplicationController
   end
   
   def destroy
-    post = Post.find(params[:id])
-    post.destroy 
-    
+    @post = Post.find_by(params[:user_id])
+    @post.destroy
+
     redirect_to("/posts/space")
   end
 end

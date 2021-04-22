@@ -8,7 +8,6 @@ class PostsController < ApplicationController
   
   def space
     @posts = Post.all.order(created_at: :asc)
-    @user = User.find_by(id: :@post.user_id)
   end
   
   def create
@@ -21,8 +20,12 @@ class PostsController < ApplicationController
   
   def destroy
     @post = Post.find_by(params[:user_id])
-    @post.destroy
-
-    redirect_to("/posts/space")
+    if @post
+      @post.destroy
+      redirect_to("/posts/space")
+    else
+      @error_message = "削除する投稿がありません"
+      render("/posts/space")
+    end
   end
 end
